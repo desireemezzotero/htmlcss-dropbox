@@ -1,0 +1,297 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --header-color: rgb(254,254,255); 
+  --font-color: black; 
+  --background-button: rgb(0,96,254);
+  --background-border-button:rgb(0,96,254); 
+  --font-color-button:white; 
+  --font-size-header:17px;
+  --background-jumbotrom:rgb(181,208,231);
+  --font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  --border-card:1px solid rgb(209,209,211);
+
+}
+
+.debug {
+  background-color: aqua;
+  border: 7px solid black;
+}
+
+.debug2 {
+  background-color: rgb(150, 150, 171);
+  border:4px solid rgb(205, 123, 123)
+}
+
+.d-flex {
+  display: flex;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1050px;
+}
+
+header {
+  background-color: var(--header-color);
+  height: 80px;
+  width: 100%;
+  font-size: var(--font-size-header);
+  z-index: 999;
+  position:fixed;
+  font-family: var(--font-family);
+}
+
+body  {
+  font-family: var(--font-family)
+}
+
+
+.button {
+  background-color: var(--background-button);
+  background-color: var(--background-border-button);
+  color: var(--font-color-button);
+  margin-left: 20px;
+  padding: 4px 18px;
+  outline-color: var(--background-border-button);
+}
+
+.margin {
+  margin-bottom: 30px;
+}
+
+h1{
+  font-size: 85px;
+  padding-top: 100px;
+}
+
+h3 {
+  font-size: 45px;
+}
+
+h4{
+  padding-top: 40px;
+  font-size: 30px;
+}
+
+h5 {
+  margin-top: 20px;
+  font-size: 16px;
+}
+
+.padding {
+  padding-left: 20px;
+}
+
+
+/* header */
+
+ul li {
+  list-style: none;
+}
+
+ul li a {
+  text-decoration: none;
+  color: var(--font-color);
+  margin-left: 42px;
+  line-height: middle;
+}
+
+header .navbar .row {
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+}
+
+.logo {
+  margin-left: 20px;
+}
+
+.start {
+  margin-right: 20px;
+}
+
+/* JUMBOTROM */
+.jum {
+  background-color: var(--background-jumbotrom);
+  min-height: 740px;
+  margin-bottom: 150px;
+}
+
+.jumbotrom {
+  margin: 0px auto;
+  max-width: 1053px;
+  min-height: 650px;
+  position: relative;
+}
+
+.free {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 17px;
+  margin-left: 0px;
+}
+
+.text {
+  max-width: 36%;
+  font-size: 15px;
+}
+
+.icon {
+  font-size: 40px;
+  color:  var(--font-color);
+  position: absolute;
+  bottom: 20px
+}
+
+.img {
+  position: absolute;
+  max-width: 780px;
+  height: 470px;
+  bottom: -70px;
+  right: -87px;
+}
+
+
+
+/* card */
+.row-card {
+  flex-wrap: wrap;
+}
+
+#years {
+  margin-left: 50px;
+  margin-top: 70px;
+}
+
+.col-card {
+ width: calc(100% / 3 - 30px) ;
+ border:var(--border-card);
+ margin-top: 50px;
+ padding-bottom: 50px;
+/*  min-height: 975px; */
+}
+
+.line1 {
+  border: var(--border-card);
+}
+
+.col-card:nth-of-type(2){
+  margin-right: 45px;
+  margin-left: 45px;
+}
+
+ 
+.up {
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+}
+
+.month {
+  color: rgb(117,117,117);
+  font-size: 12px;
+  padding-top: 20px;
+}
+
+.ul-card li i {
+  font-size: 15px;
+  padding-top: 25px;
+}
+
+.description {
+  font-size: 16px;
+  padding-left: 3px;
+}
+
+.card-but {
+  margin-top: 55px;
+  padding: 10px 23px;
+  margin-left: 38px;
+  margin-right: 38px;
+  margin-bottom: 30px;
+}
+
+.buy {
+  text-decoration: dashed;
+}
+
+.line {
+  margin-top: 30px;
+  width: 50px;
+  margin-left: 20px;
+  margin-bottom: 45px;
+}
+
+.ul-card-check {
+  padding-top: 20px;
+}
+
+.ul-card-check li i {
+  font-size: 15px;
+  color: var(--background-border-button);
+  padding-top: 15px;
+}
+
+/* ultima card */
+.col-end {
+  width: 100%;
+  border:var(--border-card);
+  margin-top: 50px;
+  padding-bottom: 35px;
+  position: relative;
+} 
+
+p {
+  padding-top: 20px;
+}
+
+.butt-final{
+  position: absolute;
+  right: 0px;
+  top: 20px;
+}
+
+
+  /* partner */
+
+.row-partner{
+  margin-top: 150px;
+}
+
+.col-image {
+  width: 60%;
+}
+
+.col-img  {
+  width: 600px;
+  height: 510px;
+}
+
+.col-text {
+  margin-left: 95px;
+  margin-top: 60px;
+}
+
+.p-partner {
+  font-size: 19px;
+}
+
+.partner-but {
+  margin-top: 30px;
+  background-color: white;
+  border:1px solid black;
+  color:black
+}
+
+/* DROPBOX */
+
+.col-dropbox {
+ width:calc(100% / 3);
+}
+
+
